@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="users_cr/static/style.css">
+    <title>Read One</title>
+</head>
+<body>
+    <a style="margin: 30px;" class="btn btn-primary" href="/read_all">Home</a>
+    <div class="card" style="width: 18rem; margin:auto; margin-top: 50px;">
+        <h1 style="text-align: center;">User {{user.id}}</h1>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">First Name: {{user.first_name}}</li>
+            <li class="list-group-item">Last Name: {{user.last_name}}</li>
+            <li class="list-group-item">Email: {{user.email}}</li>
+            <li class="list-group-item">Updated at: {{user.updated_at}}</li>
+        </ul>
+    </div>
+</body>
+</html>
